@@ -11,10 +11,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<UserBase> flag = new ArrayList<>();
-        flag.add(UserBase.of("Igor", 19));
-        flag.add(UserBase.of("Sashaig", 18));
-        flag.add(UserBase.of("Kirigll", 20));
-        DefaultStream df = new DefaultStream();
-        System.out.println(df.isCharacterPresentInAllNames(flag,"ig"));
+        flag.add(UserBase.of("Timmoty", 21));
+        flag.add(UserBase.of("Valentin", 48));
+        flag.add(UserBase.of("Timofey", 56));
+        DefaultStream defaults = new DefaultStream();
+        System.out.println(defaults.isCharacterPresentInAllNames(flag,"ig"));
     }
 }
