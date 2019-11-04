@@ -57,6 +57,7 @@ public class DefaultStream implements Operation<UserBase> {
         return entities.stream().map((s) -> UserBase.of(s.getName()+"_1", s.getAge())).collect(Collectors.toList());
     }
 
+
     @Override
     public Collection<UserBase> sortByNameThanByAge(Collection<UserBase> entities) {
         return entities.stream().sorted(Comparator.comparing(UserBase::getName).thenComparing(UserBase::getAge)).collect(Collectors.toList());
